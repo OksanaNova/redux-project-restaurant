@@ -1,7 +1,12 @@
+import dataDishes from "../../data/dataDishes"
+import Dish from "./Dish";
+
+
 const Dishes = () => {
+
     return (
         <div>
-            <p>DISHES!</p>
+            {dataDishes.map(dish => <Dish dish={dish}/>)}
         </div>
     )
 }
