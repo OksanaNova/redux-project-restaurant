@@ -1,7 +1,14 @@
+import { useSelector } from "react-redux";
+import { getSelectedCategory } from "../../redux/dishesSlice";
+
 const Filter = ({category}) => {
+
+    const selectedCategory = useSelector(getSelectedCategory);
+
+
     return (
         <div className="category">
-            <button>{category}</button>
+            <p className={selectedCategory === category ? 'categoryButtonSelected categoryButton' : 'categoryButton' }>{category}</p>
         </div>
     )
 }
