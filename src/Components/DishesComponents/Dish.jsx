@@ -11,7 +11,10 @@ const Dish = ({dish}) => {
             <h2>{dish.name}</h2>
             <p>$ {dish.price}</p>
             
-            <ChangeQuantity quantity={quantity}/>
+            <ChangeQuantity 
+            quantity={quantity}
+            setQuantity={setQuantity}/>
+            
             <button>Add to cart</button>
         </div>
     )
