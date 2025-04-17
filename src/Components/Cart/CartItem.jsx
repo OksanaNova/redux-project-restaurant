@@ -8,8 +8,8 @@ const CartItem = ({cartElement}) => {
 
     return (
         <div>
-            <p>{filteredDishes.name}</p>
-            <p>{cartElement.quantity} portion(s)</p>
+            <p>{filteredDishes.name} - <span>{cartElement.quantity} portion(s)</span></p>
+            <p>Price: ${filteredDishes.price * cartElement.quantity}</p>
         </div>
     )
 }
