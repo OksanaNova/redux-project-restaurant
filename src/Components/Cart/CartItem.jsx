@@ -10,6 +10,7 @@ const CartItem = ({cartElement}) => {
         <div>
             <p>{filteredDishes.name} - <span>{cartElement.quantity} portion(s)</span></p>
             <p>Price: ${filteredDishes.price * cartElement.quantity}</p>
+            <img className="icon" src="https://img.icons8.com/material-outlined/48/000000/trash--v1.png" alt="trash-icon" />
         </div>
     )
 }
