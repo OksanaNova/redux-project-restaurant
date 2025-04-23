@@ -1,6 +1,7 @@
 .App {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 body {
@@ -18,6 +19,11 @@ img {
 
 .cartIcon {
   width: 70px;
+}
+
+.dish {
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
 }
 
 .categoryButtonSelected {
@@ -41,24 +47,28 @@ img {
 
 p, h1, h2, button {
   font-family: 'Poppins', sans-serif;
-  /* font-size: 20px; */
+}
+
+h2 {
+  margin: 0;
 }
 
 button {
   background-color: #fdeb6b;
-  margin-top: 40px;
-  margin-left: 10px;
   cursor: pointer;
 }
 
-/* .category {
-  display: flex;
-  justify-content: center;
+@media all and (max-width: 1000px) {
+
+  img {
+    width: 300px;
+  }
+
+  .block {
+    flex: 1;
+  }
 }
 
-.dish {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
+
+
 

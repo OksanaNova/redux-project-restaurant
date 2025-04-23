@@ -3,9 +3,10 @@ import { useDispatch } from "react-redux";
 import { removeItemFromCart } from "../../redux/cartSlice";
 
 const CartItem = ({cartElement}) => {
-    console.log(cartElement)
+    // console.log(cartElement)
 
     const filteredDishes = dataDishes.find(item => item.id === cartElement.dishId);
+
     const dispatch = useDispatch();
     // console.log(filteredDishes)
 
