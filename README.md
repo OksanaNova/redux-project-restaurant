@@ -2,7 +2,7 @@
 
 A single-page educational application built with React and Redux Toolkit. Users can browse meals by category, add multiple portions to the cart, and dynamically view total pricing.
 
-![Screenshot 1](./src/assets/screenshot.PNG)  
+![Screenshot 1](./src/assets/screenshot.png)  
 
 ## Features
 
